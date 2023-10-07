@@ -134,7 +134,12 @@ body {
   /* flex-direction: column; */
   /* align-items: center; */
   justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.searchdiv img {
+  mix-blend-mode: darken;
 }
 .search-box {
   display: flex;
@@ -296,12 +301,17 @@ html, body{
   margin: auto;
   margin-bottom: 350px; /* Same height as footer */
   padding: 100px 0;
+  columns: 200px 2;
+  column-gap: 30px;
+  color: white;
 }
   h1{
     color: #111;
     font-size: 3em;
     font-weight: 900;
     padding: 0 0 20px 0;
+    column-span: all;
+    display: block  ;
   }
   h2{
     color: #111;
